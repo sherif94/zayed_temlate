@@ -1,0 +1,508 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    direction: rtl;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 80vw;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+button {
+    padding: 5px 25px;
+    color: #49BA7A;
+    border: 1px solid #49BA7A;
+    background-color: #fff;
+    font-size: 20px;
+    FONT-WEIGHT: bold;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #49BA7A;
+    color: #fff;
+}
+
+h2 {
+    font-size: 25px;
+    margin: 0;
+}
+
+p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #9E9E9E;
+}
+
+section {
+    margin: 20px 0;
+}
+
+.box {
+    border: 1px solid rgba(0, 0, 0, .11);
+    border-radius: 5px;
+}
+
+.show {
+    display: none;
+}
+
+
+/* header */
+
+header {
+    background-color: #1B0120;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+nav span {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.header-body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.header-body>div:nth-of-type(1) {
+    margin-top: 20px;
+}
+
+.header-body h1 {
+    font-size: 35px;
+    letter-spacing: 1px;
+}
+
+.header-body p {
+    font-size: 20px;
+}
+
+.header-body label,
+.header-body input {
+    margin: 15px 0;
+    display: block;
+}
+
+.header-body button {
+    background-color: #49BA7A;
+    color: #fff;
+}
+
+.header-body input {
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+}
+
+.header-body>div:nth-of-type(2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.header-body img {
+    width: 350px;
+}
+
+
+/* advantage */
+
+.advantage .container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.advantage .three-advantage {
+    padding: 60px 0;
+    width: 100%;
+}
+
+.advantage .three-advantage img {
+    width: 45px;
+}
+
+.advantage .advantage-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.advantage .advantage-pic img {
+    width: 350px;
+}
+
+
+/* Slider */
+
+.slider h1 {
+    text-align: center;
+}
+
+.slider .container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slid-container {
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.image-box {
+    cursor: pointer;
+    margin: 0 5px;
+    min-width: 180px;
+    height: 200px;
+    position: relative;
+}
+
+.image-box h3 {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.cover {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+}
+
+.logo {
+    position: absolute;
+    top: 45%;
+    left: 35%;
+    border-radius: 50%;
+}
+
+
+/*bakaat*/
+
+.bakaat h1,
+.bakaat h3,
+.bakaat p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bakaat .bakaat-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+}
+
+.bakaat .select-countary-pay {
+    font-size: 20px;
+    margin: 20px 0;
+    font-weight: 700;
+    padding: 5px;
+}
+
+.bakaat .select-countary-pay label {
+    margin-right: 10px;
+}
+
+.bakaat .select-countary-pay select {
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, .1);
+}
+
+.bakaat .bakaat-container>div {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, .2);
+    padding: 20px;
+}
+
+.bakaat .bakaat-container ul {
+    height: 450px;
+    list-style-type: none;
+    padding: 10px 0 20px 0;
+}
+
+.bakaat .bakaat-container ul li {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.bakaat .bakaat-container ul li i {
+    color: #49BA7A;
+    margin-left: 10px;
+    font-weight: lighter;
+}
+
+.bakaat .bakaat-container .price {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.bakaat .bakaat-container button {
+    padding: 15px 0;
+    width: 100%;
+}
+
+
+/*special-bakaat*/
+
+.special-bakaat .container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, .2);
+}
+
+.special-bakaat .container>div ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.special-bakaat .container>div ul i {
+    color: #49BA7A;
+    margin-left: 5px;
+}
+
+.special-bakaat .container>div ul li {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.special-bakaat .container>div:nth-of-type(2) {
+    position: relative;
+}
+
+.special-bakaat .container>div:nth-of-type(2) button {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+
+/* way-to-pay */
+
+.way-to-pay .container {
+    display: grid;
+    grid-template-columns: 15% 30% 25% 30%;
+    grid-column-gap: 1em;
+}
+
+.way-to-pay .container .container>div ul {
+    list-style-type: none;
+}
+
+.way-to-pay .container>div:nth-of-type(1) {
+    overflow: hidden;
+    padding-top: 20px;
+}
+
+.way-to-pay .container>div:nth-of-type(1) div {
+    width: 70%;
+    float: left;
+}
+
+.way-to-pay .container>div ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.way-to-pay .container>div ul li {
+    font-size: 20px;
+}
+
+
+/* .repeat-question */
+
+.repeat-question .container>div {
+    cursor: pointer;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.repeat-question .container i {
+    color: #49BA7A;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+.repeat-question .container p {
+    display: inline-block;
+    padding: 20px;
+}
+
+.repeat-question .container .info-hiden {
+    cursor: auto;
+    background-color: #ebe9ee;
+    padding: 20px 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.repeat-question .container .info-hiden.hide {
+    display: none;
+}
+
+.repeat-question .container .info-hiden ol li,
+.repeat-question .container .info-hiden ul li,
+.repeat-question .container p {
+    color: #000;
+}
+
+
+/*load app*/
+
+.load-app {
+    padding: 20px 0;
+    background-color: #49BA7A;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.load-app h1 {
+    text-align: center;
+}
+
+.load-app .container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.load-app .container p {
+    padding: 0;
+    color: #fff;
+    font-size: 20px;
+}
+
+.load-app .container ul {
+    padding: 15px;
+}
+
+.load-app .container ul li {
+    font-size: 20px;
+}
+
+.load-app .container>div:nth-of-type(1) img {
+    cursor: pointer;
+    width: 150px;
+    margin: 20px 5px
+}
+
+.load-app .container>div:nth-of-type(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.load-app .container>div:nth-of-type(2) img {
+    width: 270px;
+}
+
+
+/*footer*/
+
+footer {
+    background-color: #2C2930;
+    margin: 0;
+    color: #fff;
+}
+
+footer .country-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+footer .country-info address,
+footer .country-info h3 {
+    margin-bottom: 0;
+}
+
+footer .country-info address {
+    line-height: 1.7;
+}
+
+footer .country-info a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+footer .copy-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0 0px;
+}
+
+
+/*End */
+
+@media (max-width: 600px) {
+    .header-body {
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    footer .country-info {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 1000px) {
+    /* .header-body {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    } */
+    .advantage .container {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .advantage .three-advantage {
+        padding: 60px 30px;
+    }
+    .bakaat .heading h1,
+    .bakaat .heading p {
+        width: 100%;
+        text-align: center;
+    }
+    h1 {
+        font-size: 23px;
+    }
+    .bakaat .heading p {
+        font-size: 16px;
+    }
+    .bakaat .container {
+        width: 1200px;
+    }
+    .way-to-pay .container {
+        display: flex;
+    }
+    .way-to-pay .container .hide {
+        display: none;
+    }
+    .repeat-question .container {
+        width: 100%;
+    }
+    .load-app .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
